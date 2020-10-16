@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Prove05-Scripture</string>
+    <string name="edit_chapter">Chapter</string>
+    <string name="edit_verse">Verse</string>
+    <string name="save_scripture">Save Scripture</string>
+    <string name="edit_book">Enter Book</string>
+    <string name="display_scripture">Display Scripture</string>
+    <string name="load_scripture">Load Scripture</string>
+    <string name="textview">TextView</string>
+    <string name="enter_favorite_scripture">Enter Favorite Scripture</string>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/chapter"
+            android:layout_width="333dp"
+            android:layout_height="71dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginEnd="32dp"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="@string/enter_favorite_scripture"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.461"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editVerse"
+            android:layout_width="77dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="36dp"
+            android:ems="10"
+            android:hint="@string/edit_verse"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editChapter"
+            app:layout_constraintTop_toBottomOf="@+id/chapter" />
+
+        <EditText
+            android:id="@+id/editBook"
+            android:layout_width="153dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="17dp"
+            android:ems="10"
+            android:hint="@string/edit_book"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toStartOf="@+id/editChapter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chapter" />
+
+        <EditText
+            android:id="@+id/editChapter"
+            android:layout_width="77dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="15dp"
+            android:ems="10"
+            android:hint="@string/edit_chapter"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/editVerse"
+            app:layout_constraintStart_toEndOf="@+id/editBook"
+            app:layout_constraintTop_toBottomOf="@+id/chapter" />
+
+        <Button
+            android:id="@+id/loadScripture"
+            android:layout_width="332dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="168dp"
+            android:onClick="loadScripture"
+            android:text="@string/load_scripture"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="332dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="361dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="displayScripture"
+        android:text="@string/display_scripture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
